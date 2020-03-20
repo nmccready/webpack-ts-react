@@ -145,3 +145,4 @@ debug.json
 gulpfile.js
 .editorconfig
 *.module.css.d.ts
+*.lock
