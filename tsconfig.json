@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "removeComments": true,
+    "noLib": false,
+    "emitDecoratorMetadata": true,
+    "noImplicitAny": false,
+    "module": "ESNext",
+    "target": "ESNext",
+    "experimentalDecorators": true,
+    "sourceMap": true,
+    "declaration": true,
+    "noResolve": false,
+    "moduleResolution": "Node",
+    "outDir": "dist"
+  },
+  "include": [
+    "./src"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}

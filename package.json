@@ -1,0 +1,79 @@
+{
+  "name": "webpack-ts-react",
+  "version": "0.0.1",
+  "description": "sanity example of using webpack to build a publishable library",
+  "keywords": [
+    "ts",
+    "typescript",
+    "react",
+    "webpack"
+  ],
+  "license": "MIT",
+  "author": "nmccready",
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "node -r esm ./node_modules/.bin/webpack",
+    "prepare": "yarn prepare:all && yarn sort-package-json package.json ./packages/**/package.json",
+    "prepare:1": "concurrently \"yarn js-common-editorconfig-clone\" \"yarn js-common-debug-clone\"",
+    "prepare:2": "concurrently \"yarn js-common-prettierrc-clone\" \"yarn js-common-jest-config-mono-package-clone\"",
+    "prepare:all": "concurrently \"yarn prepare:1\" \"yarn prepare:2\"",
+    "test": "exit 0"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@teamsupercell/typings-for-css-modules-loader": "^2.1.0",
+    "@types/jest": "^24.0.17",
+    "@types/jest-expect-message": "^1.0.0",
+    "@types/node": "^13.9.1",
+    "@types/react": "^16.9.17",
+    "@types/react-dom": "^16.9.4",
+    "@types/webpack": "^4.41.7",
+    "@types/webpack-dev-server": "^3.10.1",
+    "@znemz/js-common-debug-clone": "^0.2.1",
+    "@znemz/js-common-editorconfig-clone": "^0.2.1",
+    "@znemz/js-common-eslint-config-react-emotion": "^0.2.1",
+    "@znemz/js-common-jest-config-mono-package-clone": "^0.2.1",
+    "@znemz/js-common-jest-deps": "^0.2.1",
+    "@znemz/js-common-prettierrc-clone": "^0.2.1",
+    "acorn-jsx": "^5.2.0",
+    "autoprefixer": "^9.7.4",
+    "classnames": "^2.2.6",
+    "concurrently": "^5.1.0",
+    "css-loader": "^3.4.2",
+    "eslint": "^5.3.0",
+    "eslint-plugin-import": "^2.18.0",
+    "esm": "^3.2.25",
+    "postcss": "^7.0.27",
+    "postcss-advanced-variables": "^3.0.1",
+    "postcss-automath": "^1.0.1",
+    "postcss-import": "^12.0.1",
+    "postcss-loader": "^3.0.0",
+    "postcss-nested": "^4.2.1",
+    "postcss-nested-ancestors": "^2.0.0",
+    "postcss-scss": "^2.0.0",
+    "react": "^16.9.1",
+    "react-dom": "^16.9.1",
+    "sort-package-json": "^1.30.0",
+    "style-loader": "^1.1.3",
+    "ts-loader": "^6.2.1",
+    "ts-node": "8.6.2",
+    "typescript": "^3.8",
+    "url-loader": "^4.0.0",
+    "webpack": "^4.42.0",
+    "webpack-cli": "3.3.11"
+  },
+  "peerDependencies": {
+    "classnames": "^2.2.6",
+    "react": "^16.9.1",
+    "react-dom": "^16.9.1"
+  },
+  "engines": {
+    "node": "12"
+  }
+}

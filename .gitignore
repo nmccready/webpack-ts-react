@@ -1,0 +1,147 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+/data/
+
+# Docker distribution directory
+dist
+dist-docker
+lib
+es
+
+######################
+# Ember
+######################
+
+# compiled output
+dist
+tmp
+
+# dependencies
+node_modules
+bower_components
+
+# misc
+.sass-cache
+connect.lock
+coverage/*
+libpeerconnection.log
+npm-debug.log
+testem.log
+*.md5
+
+######################
+# Java
+######################
+
+*.class
+
+# Package Files
+*.jar
+*.war
+*.ear
+*.tar
+*.tar.gz
+
+# Gradle
+.gradle
+gradle
+
+# Directories
+build
+out
+bin
+deploy
+classes
+**/src/generated
+
+######################
+# Database
+######################
+
+*/data/
+
+######################
+# IDEs
+######################
+
+# Intellij
+**/.idea/**
+*.iml
+*.iws
+*.ipr
+*.ids
+*.orig
+
+# Eclipse
+.project
+.metadata
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.classpath
+.settings/**
+.loadpath
+.factorypath
+*.launch
+.externalToolBuilders/**
+.springBeans
+.recommenders/
+
+
+######################
+# Others
+######################
+
+bindle/
+buildInfo.json
+.merge_file*
+nbproject
+
+######################
+# Docs Exclusion
+######################
+!docs/**/*
+
+# Docs exclusion is above OS specific exclusions,
+# to ensure that trash files are still ignored
+# (even when in docs directory)
+
+
+######################
+# Mac OSX
+######################
+
+.DS_Store
+.svn
+
+# Thumbnails
+._*
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+
+######################
+# Windows
+######################
+
+# Windows image file caches
+Thumbs.db
+
+# Folder config file
+Desktop.ini
+
+
+######################
+# Logs
+######################
+
+*.log
+debug.json
+.prettierrc.js
+gulpfile.js
+.editorconfig
+*.module.css.d.ts
